@@ -3,15 +3,17 @@ body {
   background-image: linear-gradient(215deg, rgb(126, 191, 219), #123);
   font-family: cursive;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 h1 {
   color: #fff;
   font-weight: 700;
-  margin-top: 125px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 4px;
-  line-height: 23px;
+  line-height: 1.5;
 }
 h1 span {
   color: #ec3453;
@@ -19,6 +21,7 @@ h1 span {
 .process-wrapper {
   margin: auto;
   max-width: 1080px;
+  width: 100%;
 }
 #progress-bar-container {
   position: relative;
@@ -125,6 +128,7 @@ h1 span {
   margin: auto;
   background-color: #f3f3f3;
   border-radius: 4px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
 }
 #progress-content-section .section-content {
   padding: 30px 40px;
@@ -161,8 +165,21 @@ h1 span {
     opacity: 1;
   }
 }
+@media screen and (max-width: 965px) {
+  #progress-bar-container li .step-inner {
+    font-size: 10px;
+  }
+  #progress-content-section{
+    width: 100%;
+    left: 0%;
+  }
+}
 @media screen and (max-width: 765px) {
   #progress-bar-container li .step-inner {
     display: none;
+  }
+  #progress-content-section{
+    width: 100%;
+    left: 0%;
   }
 }
