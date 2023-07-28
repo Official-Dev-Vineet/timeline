@@ -2,6 +2,7 @@ body {
   margin: 0;
   background-image: linear-gradient(215deg, rgb(126, 191, 219), #123);
   font-family: cursive;
+  min-height: 100vh;
 }
 h1 {
   color: #fff;
@@ -158,5 +159,10 @@ h1 span {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@media screen and (max-width: 765px) {
+  #progress-bar-container li .step-inner {
+    display: none;
   }
 }
